@@ -1,0 +1,35 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 7px 7px 12px rgba(198, 198, 198, 0.7);
+  background-color: rgba(198, 198, 198, 0.7);
+}
+
+.btn:active {
+  box-shadow: 7px 7px 12px rgba(198, 198, 198, 0.7);
+  background-color: rgba(198, 198, 198, 0.36);
+}
