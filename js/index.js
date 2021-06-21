@@ -35,9 +35,9 @@ refs.startBtn.addEventListener("click", colorSwitchHandler);
 refs.stopBtn.addEventListener("click", stopColorSwitch);
 
 function colorSwitchHandler() {
+  refs.startBtn.disabled = true;
+  refs.stopBtn.disabled = false;
   intervalId = setInterval(() => {
-    refs.startBtn.disabled = true;
-    refs.stopBtn.disabled = false;
     refs.body.style.background =
       gradients[randomIntegerFromInterval(0, gradients.length - 1)];
   }, 1000);
